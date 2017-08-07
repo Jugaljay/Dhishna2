@@ -3,7 +3,8 @@
         id="@+id/tab_sponsors"
         icon="@drawable/comp"
         title="Sponsors"
-        barColorWhenSelected="#5D4037"
+        barColorWhenSelected="#2c3e50"
+        font-family="ssla"
 
 
         />
@@ -12,14 +13,14 @@
         id="@+id/tab_events"
         icon="@drawable/comp"
         title="Events"
-        barColorWhenSelected="#5037"
+        barColorWhenSelected="#2980b9"
 
         />
     <tab
         id="@+id/tab_home"
         icon="@drawable/comp"
         title="Home"
-        barColorWhenSelected="#5037"
+        barColorWhenSelected="#2ecc71"
 
 
         />
@@ -27,9 +28,11 @@
         id="@+id/tab_eventCal"
         icon="@drawable/comp"
         title="Schedule"
-        badgeHidesWhenActive="false"/>
+        badgeHidesWhenActive="false"
+        barColorWhenSelected="#e74c3c"/>
     <tab
         id="@+id/tab_contact"
         icon="@drawable/comp"
-        title="Contact Us"/>
+        title="Contact Us"
+        barColorWhenSelected= "#9b59b6"/>
 </tabs>

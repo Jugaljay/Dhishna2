@@ -4,6 +4,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -13,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.avast.android.dialogs.fragment.SimpleDialogFragment;
@@ -38,7 +40,9 @@ public class MainActivity extends FragmentActivity{
         final LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final FragmentManager fragmentManager = getFragmentManager();
         //  final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
+       // TextView myTextView=(TextView)findViewById(R.id.title_price);
+       // Typeface typeFace=Typeface.createFromAsset(getAssets(),"fonts/BebasNeue.otf");
+       // myTextView.setTypeface(typeFace);
 
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
