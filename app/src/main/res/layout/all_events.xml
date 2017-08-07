@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/mainListView"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="#e67e22"
+
+    android:clipChildren="false"
+
+    android:clipToPadding="false"
+
+    android:divider="@android:color/transparent"
+
+    android:dividerHeight="10dp"
+
+    android:paddingBottom="85dp"
+
+    android:paddingLeft="20dp"
+
+    android:paddingRight="10dp"
+
+    android:paddingTop="20dp"
+
+    android:scrollbars="none"
+    android:textAlignment="center"
+
+     />

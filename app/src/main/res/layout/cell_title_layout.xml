@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="100dp"
+
+    android:background="#F344"
+
+    android:baselineAligned="false"
+
+    android:orientation="horizontal">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+
+            android:id="@+id/title_price"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="100dp"
+            android:textAlignment="center"
+
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+
+            android:textSize="30sp" />
+</RelativeLayout>
+
+</FrameLayout>

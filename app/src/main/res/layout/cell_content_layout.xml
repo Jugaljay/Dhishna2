@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="250dp"
+
+    android:orientation="vertical"
+
+    android:visibility="gone"
+    android:background="#3498db">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+        <TextView
+
+            android:id="@+id/event1"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:textSize="50sp"
+            android:textAlignment="center"
+
+
+
+
+           />
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/event2"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="60dp"
+        android:textSize="37sp"
+        android:textAlignment="center"
+
+        />
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/event3"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:textSize="25sp"
+        android:textAlignment="gravity"
+
+
+        />
+    <TextView
+
+        android:id="@+id/content_request_btn"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+
+
+        android:text="See More"
+
+        android:textAlignment="center"
+
+
+
+
+        />
+
+
+
+</LinearLayout>
+
+
+
+   </FrameLayout>
