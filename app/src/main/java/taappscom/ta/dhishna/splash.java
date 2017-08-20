@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class splash extends Activity {
 
     @Override
@@ -14,6 +16,10 @@ public class splash extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         Animation animation1;
+      //  LottieAnimationView animationView = (LottieAnimationView) findViewById(R.id.animation_view);
+       // animationView.setAnimation("data.json");
+        //animationView.loop(true);
+        //animationView.playAnimation();
         // animation1= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.animation);
         // animation1.start();
         Thread logoTimer = new Thread() {

@@ -1,9 +1,13 @@
 package taappscom.ta.dhishna;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +25,8 @@ import java.util.zip.Inflater;
  */
 public class Eventsall extends Fragment
 {
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 // Inflate the layout for this fragment
@@ -36,6 +42,8 @@ View view= inflater.inflate(R.layout.all_events,container,false);
 
 
 
+       final SharedPreferences sharedPreferences= PreferenceManager.getDefaultSharedPreferences(this.getActivity());
+
         // add custom btn handler to first list item
 
         items.get(0).setRequestBtnClickListener(new View.OnClickListener() {
@@ -44,10 +52,13 @@ View view= inflater.inflate(R.layout.all_events,container,false);
 
             public void onClick(View v) {
 
-               Toast.makeText(getActivity(), "CUSTOM HANDLER FOR FIRST BUTTON", Toast.LENGTH_SHORT).show();
+SharedPreferences.Editor editor=sharedPreferences.edit();
+                editor.putInt("Branch_Name",0);
+                editor.apply();
+                   Toast.makeText(getActivity(), "CUSTOM HANDLER FOR FIRST BUTTON", Toast.LENGTH_SHORT).show();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                itevents fragment=new itevents();
+                EventPageAdapter fragment=new EventPageAdapter();
                 fragmentTransaction.replace(R.id.contents,fragment);
                 fragmentTransaction.commit();
             }
@@ -70,7 +81,15 @@ View view= inflater.inflate(R.layout.all_events,container,false);
 
             public void onClick(View v) {
 
-               Toast.makeText(getActivity(), "DEFAULT HANDLER FOR ALL BUTTONS", Toast.LENGTH_SHORT).show();
+                SharedPreferences.Editor editor=sharedPreferences.edit();
+                editor.putInt("Branch_Name",getId());
+                editor.apply();
+                Toast.makeText(getActivity(), "CUSTOM HANDLER FOR FIRST BUTTON", Toast.LENGTH_SHORT).show();
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                EventPageAdapter fragment=new EventPageAdapter();
+                fragmentTransaction.replace(R.id.contents,fragment);
+                fragmentTransaction.commit();
 
             }
 

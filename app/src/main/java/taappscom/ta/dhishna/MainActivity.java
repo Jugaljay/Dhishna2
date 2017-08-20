@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.avast.android.dialogs.fragment.SimpleDialogFragment;
 import com.avast.android.dialogs.iface.INegativeButtonDialogListener;
 import com.avast.android.dialogs.iface.ISimpleDialogListener;
+import com.manuelpeinado.fadingactionbar.FadingActionBarHelper;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
@@ -35,6 +36,9 @@ public class MainActivity extends FragmentActivity{
         final BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         bottomBar.setDefaultTab(R.id.tab_home);
         final Context context = this;
+        //FadingActionBarHelper helper=new FadingActionBarHelper().headerLayout(R.layout.header).contentLayout(R.layout.activity_main).lightActionBar(true);
+        //setContentView(helper.createView(this));
+       // helper.initActionBar(this);
         // LinearLayout ll=(LinearLayout)findViewById(R.id.schedule_layout);
         final FrameLayout fl = (FrameLayout) findViewById(R.id.contents);
         final LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -50,7 +54,7 @@ public class MainActivity extends FragmentActivity{
                 if (tabID == R.id.tab_eventCal) {
 
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    Scheduler fragment = new Scheduler();
+                    EventPageAdapter fragment = new EventPageAdapter();
 
                     fragmentTransaction.replace(R.id.contents, fragment);
                     //  fragmentTransaction.addToBackStack(null);
@@ -70,7 +74,7 @@ public class MainActivity extends FragmentActivity{
                     //  fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commitAllowingStateLoss();
 
-                    // LinearLayout ll=(LinearLayout)inflater.inflate(R.layout.contacts,null);
+                    // LinearLayout ll=(LinearLayout)inflater.inflate(R.layout.popup_it,null);
                     //  fl.removeAllViews();
                     // fl.addView(ll);
 
@@ -128,6 +132,7 @@ public class MainActivity extends FragmentActivity{
         });
 
     }
+
     public void onBackPressed()
     { SimpleDialogFragment.createBuilder(this, getSupportFragmentManager()).setTitle("Dhishna").setMessage("Please don't go away ").setPositiveButtonText("cool").setNegativeButtonText("go to go").show();
 

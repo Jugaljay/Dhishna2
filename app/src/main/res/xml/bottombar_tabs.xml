@@ -27,7 +27,7 @@
     <tab
         id="@+id/tab_eventCal"
         icon="@drawable/comp"
-        title="Schedule"
+        title="Showcase"
         badgeHidesWhenActive="false"
         barColorWhenSelected="#e74c3c"/>
     <tab
