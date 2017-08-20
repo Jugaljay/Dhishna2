@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "635354716755",
+    "firebase_url": "https://dhishna-5392e.firebaseio.com",
+    "project_id": "dhishna-5392e",
+    "storage_bucket": "dhishna-5392e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635354716755:android:e5f5abe461410653",
+        "android_client_info": {
+          "package_name": "taappscom.ta.dhishna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635354716755-6gij52hs3qpgmmo3nqss85ehetppsjsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "taappscom.ta.dhishna",
+            "certificate_hash": "643324fc0c3a6abcd116c0c3525d511ba7787bea"
+          }
+        },
+        {
+          "client_id": "635354716755-ntdpe561mvcqmamghqb1o31ukel4se7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0LsIsAPDDce70CrJ_-ajYtKRmMpwQLAk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635354716755-ntdpe561mvcqmamghqb1o31ukel4se7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
